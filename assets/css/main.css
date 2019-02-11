@@ -29,6 +29,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+#paul-pic {
+	height: 350px;
+	border-radius: 20px;
+
+}
+
 body {
 	line-height: 1;
 }
@@ -147,7 +153,7 @@ input, select, textarea {
 	}
 
 		header > p {
-			margin: 1em 0 0 0;
+			margin: 0 0 0 0;
 		}
 
 	footer {
@@ -1756,13 +1762,13 @@ input, select, textarea {
 
 		.image.avatar48 {
 			width: auto;
-			height: 60px;
+			height: 50px;
 			background: #f00;
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: auto;
+				height: 50px;
 			}
 
 		.image.fit {
