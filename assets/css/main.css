@@ -92,9 +92,10 @@ input, select, textarea {
 		background: #fff;
 		font-family: 'Nunito';
 		font-size: 19pt;
-		font-weight: 300;
+		font-weight: 100;
 		line-height: 1.75em;
-		color: #888;
+		color: rgb(64, 67, 99);
+		text-rendering: optimizeLegibility;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1769,10 +1770,11 @@ input, select, textarea {
 			height: 50px;
 			background: #f00;
 		}
-
-			.image.avatar48 img {
-				width: auto;
-				height: 50px;
+		
+		.image.avatar48 img {
+			width: auto;
+			height: 50px;
+			border-radius: 70px;
 			}
 
 		.image.fit {
@@ -2242,18 +2244,18 @@ input, select, textarea {
 
 				#title {
 					font-family: Quicksand;
-					font-size: 22px;
+					font-size: 24px;
 					color: black;
 					font-weight: 800;
 				}
 
 				#description {
 					font-family: Quicksand;
-					font-size: 14px;
+					font-size: 16px;
 					color: darkgray;
 					font-weight: 600;
 					line-height: 6px;
-					height: 18px;
+					height: 10pxpx;
 				}
 
 				#main > section.dark strong {
