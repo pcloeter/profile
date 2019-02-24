@@ -90,7 +90,7 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Nunito';
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -120,6 +120,12 @@ input, select, textarea {
 		font-weight: 300;
 		color: #666;
 		line-height: 1.5em;
+		color: white;
+		text-shadow: 		
+		-2px -2px 20px black,
+		2px -2px 20px black,
+		-2px 2px 20px black,
+		2px 2px 20px black;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -136,9 +142,6 @@ input, select, textarea {
 		letter-spacing: -1px;
 	}
 
-		h2.alt {
-			color: #888;
-		}
 
 			h2.alt strong {
 				color: #666;
@@ -271,6 +274,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		justify-content: center;
 	}
 
 		.row > * {
@@ -334,7 +338,7 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.3333333333%;
+			width: 50%;
 		}
 
 		.row > .off-4 {
@@ -2200,6 +2204,10 @@ input, select, textarea {
 		margin-left: 375px;
 	}
 
+	.top {
+		padding-bottom: 0;
+	}
+
 		#main > section {
 			margin: 0;
 			overflow: hidden;
@@ -2210,16 +2218,46 @@ input, select, textarea {
 		}
 
 			#main > section.dark {
-				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: white;
+				/* color: rgba(255, 255, 255, 0.75); */
+				padding:0;
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
 					color: inherit;
+					text-shadow: 		
+					-2px -2px 20px black,
+					2px -2px 20px black,
+					-2px 2px 20px black,
+					2px 2px 20px black;
+				}
+				#intro {
+				color: white;
+					text-shadow: 		
+					-2px -2px 20px black,
+					2px -2px 20px black,
+					-2px 2px 20px black,
+					2px 2px 20px black;
+				}
+
+				#title {
+					font-family: Quicksand;
+					font-size: 22px;
+					color: black;
+					font-weight: 800;
+				}
+
+				#description {
+					font-family: Quicksand;
+					font-size: 14px;
+					color: darkgray;
+					font-weight: 600;
+					line-height: 6px;
+					height: 18px;
 				}
 
 				#main > section.dark strong {
-					color: #fff;
+					color: rgb(155, 255, 233);
 					border-color: inherit;
 				}
 
@@ -2233,14 +2271,20 @@ input, select, textarea {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 0;
 				background-size: cover;
 				background-position: center center;
 			}
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/paul_d_cloeter_small 2.png");
+				height: 700px;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				padding: 0;
 			}
 
 			#main > section.two {
@@ -2296,7 +2340,7 @@ input, select, textarea {
 			}
 
 			#main section.cover {
-				padding: 5em 0;
+				padding: 0;
 			}
 
 	}
@@ -2554,7 +2598,7 @@ input, select, textarea {
 				}
 
 				#main section.cover {
-					padding: 4em 0;
+					padding: 0;
 				}
 
 	}
@@ -2573,6 +2617,7 @@ input, select, textarea {
 				font-size: 1.5em;
 				letter-spacing: 0;
 				font-weight: 300;
+				
 			}
 
 			.container {
@@ -2593,7 +2638,7 @@ input, select, textarea {
 			}
 
 			#main section.cover {
-				padding: 4em 0em;
+				padding: 0;
 			}
 
 				#main section.cover header {
