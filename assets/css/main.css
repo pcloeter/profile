@@ -92,7 +92,7 @@ input, select, textarea {
 		background: #fff;
 		font-family: 'Nunito';
 		font-size: 19pt;
-		font-weight: 100;
+		/* font-weight: 100; */
 		line-height: 1.75em;
 		color: rgb(64, 67, 99);
 		text-rendering: optimizeLegibility;
@@ -112,7 +112,7 @@ input, select, textarea {
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.75em;
 		color: #888;
 	}
@@ -165,7 +165,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 700;
 		color: #666;
 	}
 
@@ -2221,7 +2221,7 @@ input, select, textarea {
 
 			#main > section.dark {
 				color: white;
-				/* color: rgba(255, 255, 255, 0.75); */
+				color: rgba(255, 255, 255, 0.75);
 				padding:0;
 			}
 
@@ -2236,10 +2236,10 @@ input, select, textarea {
 				#intro {
 				color: white;
 					text-shadow: 		
-					-2px -2px 20px black,
-					2px -2px 20px black,
-					-2px 2px 20px black,
-					2px 2px 20px black;
+					-2px -2px 25px black,
+					2px -2px 25px black,
+					-2px 2px 25px black,
+					2px 2px 25px black;
 				}
 
 				#title {
@@ -2254,8 +2254,24 @@ input, select, textarea {
 					font-size: 16px;
 					color: darkgray;
 					font-weight: 600;
-					line-height: 6px;
-					height: 10pxpx;
+					line-height: 22px;
+				}
+
+				#about img {
+					border: solid black 3px;
+				}
+				#about-me {
+					font-size: 18px;
+				}
+
+				#about-me b {
+					color: black;
+					font-weight: 800;
+				}
+
+				#project-label {
+					display: flex;
+					flex-direction: column;
 				}
 
 				#main > section.dark strong {
