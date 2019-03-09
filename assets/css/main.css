@@ -39,6 +39,10 @@ body {
 	line-height: 1;
 }
 
+a {
+	text-decoration: none;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -129,7 +133,7 @@ input, select, textarea {
 		2px 2px 20px black;
 	}
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a span a {
 		color: inherit;
 		text-decoration: none;
 	}
@@ -176,17 +180,23 @@ input, select, textarea {
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+		/* border-bottom: dotted 1px rgba(128, 128, 128, 0.5); */
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		transition: color 0.35s ease-in-out, text-shadow 0.35s ease-in-out;
 		outline: 0;
 	}
 
 		a:hover {
-			color: #E27689;
+			color: rgb(126, 214, 195);
 			border-bottom-color: rgba(255, 255, 255, 0);
+			/* text-shadow: 		
+			-1px -1px 1px lightgray,
+			1px -1px 1px lightgray,
+			-1px 1px 1px lightgray,
+			1px 1px 1px lightgray; */
 		}
 
 	sub {
@@ -2257,6 +2267,11 @@ input, select, textarea {
 					line-height: 22px;
 				}
 
+				#repo {
+					font-size: 14px;
+					font-weight: 400;
+				}
+
 				#about img {
 					/* border: solid black 3px; */
 					box-shadow: 		
@@ -2274,7 +2289,10 @@ input, select, textarea {
 				} */
 
 				#about-me {
-					font-size: 18px;
+					font-size: 20px;
+					margin: 0 60px 0 60px;
+					text-shadow: 1px 1px 3px rgb(182, 182, 182);
+					color: rgb(53, 53, 53);
 				}
 
 				#about-me b {
